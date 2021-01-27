@@ -1,0 +1,62 @@
+/* CSS Variables defined in ./inlined/InlinedCSS.abell */
+body {
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  padding: 100px 350px 80px 350px;
+}
+
+div.header-bio{
+  color: var(--font-color-body);
+}
+
+header > h1 {
+  margin: 10px 0px;
+  font-size: 50pt;
+  color: var(--font-color-primary);
+  font-weight: 300;
+}
+
+.article-title {
+  font-size: 25pt;
+  color: var(--font-color-primary);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.article-date {
+  font-size: 14pt;
+  color: var(--font-color-date);
+  padding: 0px 0px 2px 1px;
+}
+.article-container {
+  padding: 10px 350px 100px 350px;
+}
+.article-container > article {
+  margin-bottom: 40px;
+}
+.article-container > article > a {
+  display: block;
+}
+.article-container > article h2 {
+  margin: 9px 0px 0px 0px;
+}
+.article-container .article-description {
+  margin: 8px 0px;
+  color: var(--font-color-body);
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 30px 20px 20px 20px;
+  }
+  .article-container {
+    padding: 30px 20px 20px 0px;
+  }
+  .article-container > article > a {
+    padding: 15px 20px;
+    display: block;
+  }
+}

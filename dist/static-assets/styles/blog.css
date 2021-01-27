@@ -1,0 +1,70 @@
+main {
+  padding: 100px 500px;
+  line-height: 25px;
+}
+
+p {
+  margin: 0px;
+  padding: 1px 0px 15px 0px;
+}
+
+div.blog-container {
+  padding-top: 30px;
+  color: var(--font-color-body)
+}
+
+h3{
+  color: var(--font-color-date)
+}
+
+div.blog-container h1 {
+  font-size: 30pt;
+  font-weight: bold;
+  line-height: 40px;
+  color: var(--font-color-primary);
+  /* margin-bottom: 50px; */
+}
+
+div.blog-container h2 {
+  font-size: 23pt;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+div.blog-container h3 {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+code {
+  background-color: var(--code-background);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: var(--font-family-primary);
+}
+
+blockquote {
+  background-color: var(--code-background);
+  margin: 0px;
+  padding: 10px;
+  padding-left: 20px;
+  border-left: 3px solid #333;
+}
+
+hr {
+  border-color: var(--code-background);
+  opacity: 0.3;
+}
+
+@media (max-width: 780px) and (min-width: 220px) {
+  main {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 781px) {
+  main {
+    padding: 40px 260px;
+  }
+}

@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="While learning JavaScript, I had actually missed these topics and was about to switch to React JS. Luckily, I didn't skip these topics and learnt these functions and methods as well. Hence, whoever is learning JavaScript should read this blog before learning React"/>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <meta name="og:title" content="High Order Functions and Arrays in JavaScript"/>
+  <meta name="og:description" content="While learning JavaScript, I had actually missed these topics and was about to switch to React JS. Luckily, I didn't skip these topics and learnt these functions and methods as well. Hence, whoever is learning JavaScript should read this blog before learning React"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../static-assets/styles/blog.css"/>
+
+  <title>High Order Functions and Arrays in JavaScript - Pal Feed</title>
+  
+  
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+    body {
+      --background-primary: #fff;
+      --font-color-primary: #333;
+      --font-color-date: #505050;
+      --font-color-body: #202020;
+      --elevation-background: #fff;
+      --code-background: #f3f3f3;
+      --link-color: #7d95c5;
+      --font-family-primary: "Mulish", sans-serif;
+    }
+
+    body.dark {
+      --background-primary: #06090f;
+      --font-color-primary: #9bafd8;
+      --font-color-date: #d3d3d3;
+      --font-color-body: #cccccc;
+      --elevation-background: #1d1d1d;
+      --code-background: #222;
+      --link-color: #7d95c5;
+    }
+
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--background-primary);
+      font-family: var(--font-family-primary);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-family-primary);
+      color: var(--font-color-primary);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--link-color);
+    }
+
+    /* .shadow {
+    box-shadow: 0 5px 20px -4px #0005;
+  } */
+  .dark-mode-toggle[data-abell-iFYWuD]{cursor:pointer;float:right;border:none;background:transparent;}body:not(.user-is-tabbing) .dark-mode-toggle[data-abell-iFYWuD]:focus{outline:none;}.dark-mode-toggle .moon[data-abell-iFYWuD]{padding:10px;}.dark-mode-toggle .sun[data-abell-iFYWuD]{padding:5px;}body.dark .dark-mode-toggle .moon[data-abell-iFYWuD]{display:inline-block;}body.dark .dark-mode-toggle .sun[data-abell-iFYWuD]{display:none;}body .dark-mode-toggle .moon[data-abell-iFYWuD]{display:none;}body .dark-mode-toggle .sun[data-abell-iFYWuD]{display:inline-block;}</style>
+
+<link rel="stylesheet" href="..\bundled-css\main.abell.css"/>
+</head>
+<body>
+  <main>
+    <button aria-label="Activate Dark Mode" aria-pressed="false" onclick="toggleTheme(this)" class="dark-mode-toggle" data-abell-iFYWuD>
+    <span class="sun" data-abell-iFYWuD> <img alt="sun icon that represents light mode" width="35px" src="../static-assets/icons/sun.svg" data-abell-iFYWuD /></span>
+    <span class="moon" data-abell-iFYWuD><img alt="moon icon to represent dark mode " width="25px" src="../static-assets/icons/moon.svg" data-abell-iFYWuD /></span>
+  </button>
+    <div class="blog-container">
+      <div class="content">
+        <h1 id="high-order-functions-and-arrays-in-javascript">High Order Functions and Arrays in JavaScript</h1>
+<h3 id="tue-dec-08-2020">Tue Dec 08 2020</h3>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ATVdqwAI--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/v5hsjgjm37h8ov48vt1e.png" alt="Alt Text"> <br></p>
+<p>Hi 👋 <br />
+What is this ?
+'this' in JavaScript is set to the current environment in which the function is being executed.
+Often good programmers find it astounding and confusing and have a vague citation to this keyword.
+Hence, to clearly define the object to which this keyword belongs, we need to use methods like bind(), call() and apply().
+<br /><br /></p>
+<p><br>
+<a href="https://dev.to/rajatmehra05/high-order-functions-and-arrays-in-javascript-e1o">Complete Blog here ...</a></p>
+      </div>
+    </div>
+    <hr/><br/><br/>
+  </main>
+  <footer data-abell-jLzQID>
+    <div style="text-align: right;" data-abell-jLzQID>© <span id="footer-year" data-abell-jLzQID></span>, Built with <a href="https://github.com/abelljs/abell" data-abell-jLzQID>Abell</a></div>
+  </footer>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script defer src="../static-assets/js/static-main.js"></script>
+<script>
+  function toggleTheme(toggleButton) {
+    if (document.body.classList.contains('dark')) {
+      document.body.classList.remove('dark');
+      window.localStorage.setItem('prefers-theme', 'light');
+      if (toggleButton) {
+        toggleButton.setAttribute('aria-pressed', false);
+        toggleButton.setAttribute('aria-label', 'Activate Dark Mode');
+      }
+    } else {
+      document.body.classList.add('dark');
+      window.localStorage.setItem('prefers-theme', 'dark');
+      if (toggleButton) {
+        toggleButton.setAttribute('aria-pressed', true);
+        toggleButton.setAttribute('aria-label', 'Activate Light Mode');
+      }
+    }
+  }
+
+  const localPreference = window.localStorage.getItem('prefers-theme');
+
+  if (localPreference) {
+    if (localPreference === 'light') document.body.classList.remove('dark');
+    else document.body.classList.add('dark');
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+    document.body.classList.add('dark');
+  }
+</script>
+<script src="..\bundled-js\main.abell.js"></script>
+</body>
+</html>

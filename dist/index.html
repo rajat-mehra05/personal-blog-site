@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to the blog by Rajat Mehra. He is a frontend developer residing in India. Also loves to write poetry and play online games."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static-assets/styles/index.css" />
+    <title>Blog by Rajat Mehra</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+      body {
+        --background-primary: #fff;
+        --font-color-primary: #333;
+        --font-color-date: #505050;
+        --font-color-body: #202020;
+        --elevation-background: #fff;
+        --code-background: #f3f3f3;
+        --link-color: #7d95c5;
+        --font-family-primary: "Mulish", sans-serif;
+      }
+
+      body.dark {
+        --background-primary: #06090f;
+        --font-color-primary: #9bafd8;
+        --font-color-date: #d3d3d3;
+        --font-color-body: #cccccc;
+        --elevation-background: #1d1d1d;
+        --code-background: #222;
+        --link-color: #7d95c5;
+      }
+
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      body {
+        background-color: var(--background-primary);
+        font-family: var(--font-family-primary);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-family-primary);
+        color: var(--font-color-primary);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--link-color);
+      }
+
+      /* .shadow {
+    box-shadow: 0 5px 20px -4px #0005;
+  } */
+      .dark-mode-toggle[data-abell-iFYWuD] {
+        cursor: pointer;
+        float: right;
+        border: none;
+        background: transparent;
+      }
+      body:not(.user-is-tabbing) .dark-mode-toggle[data-abell-iFYWuD]:focus {
+        outline: none;
+      }
+      .dark-mode-toggle .moon[data-abell-iFYWuD] {
+        padding: 10px;
+      }
+      .dark-mode-toggle .sun[data-abell-iFYWuD] {
+        padding: 5px;
+      }
+      body.dark .dark-mode-toggle .moon[data-abell-iFYWuD] {
+        display: inline-block;
+      }
+      body.dark .dark-mode-toggle .sun[data-abell-iFYWuD] {
+        display: none;
+      }
+      body .dark-mode-toggle .moon[data-abell-iFYWuD] {
+        display: none;
+      }
+      body .dark-mode-toggle .sun[data-abell-iFYWuD] {
+        display: inline-block;
+      }
+    </style>
+
+    <link rel="stylesheet" href="bundled-css\main.abell.css" />
+  </head>
+  <body>
+    <header>
+      <button
+        aria-label="Activate Dark Mode"
+        aria-pressed="false"
+        onclick="toggleTheme(this)"
+        class="dark-mode-toggle"
+        data-abell-iFYWuD
+      >
+        <span class="sun" data-abell-iFYWuD>
+          <img
+            alt="sun icon that represents light mode"
+            width="35px"
+            src="/static-assets/icons/sun.svg"
+            data-abell-iFYWuD
+        /></span>
+        <span class="moon" data-abell-iFYWuD
+          ><img
+            alt="moon icon to represent dark mode "
+            width="25px"
+            src="/static-assets/icons/moon.svg"
+            data-abell-iFYWuD
+        /></span>
+      </button>
+      <h1>Rajat Mehra</h1>
+      <div class="header-bio">
+        Hey there! welcome to my blog. <br />You can find me as
+        <b>' _rajat_mehra_ '</b> on most places. 🤗<a
+          href="https://twitter.com/_rajat_mehra_"
+        >
+          Twitter
+        </a>
+        | <a href="https://github.com/rajat-mehra05">GitHub</a> |
+        <a href="https://www.linkedin.com/in/rajat-mehra-/">LinkedIn</a> <br />
+        I'm a Frontend Developer from India and I build web apps and websites.
+        I'm fascinated with and in awe of everything that happens on web.<br />
+        <br />
+        Currently, I'm looking for a full time job in web developent and looking
+        forward to contribute in Open Source projects.
+        <br />
+        <br />
+        I also ❤️ other things, not in a particular order:
+        <ul>
+          <li>Valorant</li>
+          <li>Poetry - <span>I write poems often 🙂</span></li>
+          <li>GitHub</li>
+          <li>Reading docs</li>
+          <li>Nature photography</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="article-container">
+        <article class="shadow">
+          <a href="async-await/">
+            <p class="article-title">What is Async Await in JavaScript</p>
+            <div class="article-date"><small>Tue Jan 26 2021</small></div>
+            <p class="article-description">
+              Most of us as developers use these keywords in our daily lives
+              while coding, so I thought to give it a brief from my own
+              understanding. I hope you find this post useful by the end of this
+              post. Let's go!
+            </p>
+          </a>
+        </article>
+
+        <article class="shadow">
+          <a href="functions2/">
+            <p class="article-title">
+              High Order Functions and Arrays in JavaScript
+            </p>
+            <div class="article-date"><small>Tue Dec 08 2020</small></div>
+            <p class="article-description">
+              While learning JavaScript, I had actually missed these topics and
+              was about to switch to React JS. Luckily, I didn't skip these
+              topics and learnt these functions and methods as well. Hence,
+              whoever is learning JavaScript should read this blog before
+              learning React
+            </p>
+          </a>
+        </article>
+
+        <article class="shadow">
+          <a href="functions/">
+            <p class="article-title">
+              bind(), call(), and apply() in JavaScript
+            </p>
+            <div class="article-date"><small>Sun Dec 06 2020</small></div>
+            <p class="article-description">
+              Even the professional developers get stuck often with these
+              functions, that's the reason I made this blog to walk you through
+              these 3 methods that appear on most functions in JavaScript.
+            </p>
+          </a>
+        </article>
+      </div>
+    </main>
+    <footer data-abell-jLzQID>
+      <div style="text-align: right" data-abell-jLzQID>
+        © <span id="footer-year" data-abell-jLzQID></span>, Built with
+        <a href="https://github.com/abelljs/abell" data-abell-jLzQID>Abell</a>
+      </div>
+    </footer>
+    <script defer src="/static-assets/js/static-main.js"></script>
+    <script>
+      function toggleTheme(toggleButton) {
+        if (document.body.classList.contains("dark")) {
+          document.body.classList.remove("dark");
+          window.localStorage.setItem("prefers-theme", "light");
+          if (toggleButton) {
+            toggleButton.setAttribute("aria-pressed", false);
+            toggleButton.setAttribute("aria-label", "Activate Dark Mode");
+          }
+        } else {
+          document.body.classList.add("dark");
+          window.localStorage.setItem("prefers-theme", "dark");
+          if (toggleButton) {
+            toggleButton.setAttribute("aria-pressed", true);
+            toggleButton.setAttribute("aria-label", "Activate Light Mode");
+          }
+        }
+      }
+
+      const localPreference = window.localStorage.getItem("prefers-theme");
+
+      if (localPreference) {
+        if (localPreference === "light") document.body.classList.remove("dark");
+        else document.body.classList.add("dark");
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.body.classList.add("dark");
+      }
+    </script>
+    <script src="bundled-js\main.abell.js"></script>
+  </body>
+</html>

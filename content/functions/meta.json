@@ -1,0 +1,5 @@
+{
+  "title": "bind(), call(), and apply() in JavaScript",
+  "description": "Even the professional developers get stuck often with these functions, that's the reason I made this blog to walk you through these 3 methods that appear on most functions in JavaScript.",
+  "$createdAt": "Dec 6, 2020"
+}
