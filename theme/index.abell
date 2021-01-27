@@ -19,13 +19,33 @@
 <body>
   <header>
     <DarkModeToggle props={$root} />
-    <h1>Aayush Pal</h1>
-    <div class="header-bio">
-      Hey there! welcome to my corner of the internet. <br/>You can find me as  <b>' {{ globalMeta.name }} '</b> on most places. 🤗<a href="https://twitter.com/{{ globalMeta.twitter }}">  Twitter </a> | <a href="https://github.com/palcodes">GitHub</a> | <a href="https://www.instagram.com/palcodes/">Instagram</a> <br>
-      A mere CS student with a not so mere love for computers.💻 I like to work with all kinds of tech, mostly mobile.<br />
-      This website is a collection of thoughts, opinions I have on things that I see around the world, a journal of sorts. 📑
-    </div>
-  </header>
+    <h1>Rajat Mehra</h1>
+      <div class="header-bio">
+        Hey there! welcome to my blog. <br />You can find me as
+        <b>' _rajat_mehra_ '</b> on most places. 🤗<a
+          href="https://twitter.com/_rajat_mehra_"
+        >
+          Twitter
+        </a>
+        | <a href="https://github.com/rajat-mehra05">GitHub</a> |
+        <a href="https://www.linkedin.com/in/rajat-mehra-/">LinkedIn</a> <br />
+        I'm a Frontend Developer from India and I build web apps and websites.
+        I'm fascinated with and in awe of everything that happens on web.<br />
+        <br />
+        Currently, I'm looking for a full time job in web developent and looking
+        forward to contribute in Open Source projects.
+        <br />
+        <br />
+        I also ❤️ other things, not in a particular order:
+        <ul>
+          <li>Valorant</li>
+          <li>Poetry - <span>I write poems often 🙂</span></li>
+          <li>GitHub</li>
+          <li>Reading docs</li>
+          <li>Nature photography</li>
+        </ul>
+      </div>
+    </header>
   <main>
     <div class="article-container">
       {{
